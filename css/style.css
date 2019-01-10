@@ -1,0 +1,72 @@
+body {
+  /* background-color: #f9f7f1; */
+  /* font-family: 'Courgette', cursive; */
+  font-family: 'Handlee', cursive;
+  padding-top: 70px;
+}
+
+.outline {
+  border: 2px solid black;
+}
+
+.bg-color {
+  background-color: black;
+}
+
+.btn {
+  border: 2px solid black;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+}
+
+.jumbo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+  url("../img/test.jpg");
+  background-size: cover;
+}
+
+.jumbo2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+  url("../img/test.jpg");
+  background-size: cover;
+} 
+
+.shadow {
+  text-shadow: 0px 1px 14px rgba(0,0,0,1.0);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+:target:before {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  margin: -50px 0 0;
+}
+
+.fix {
+  padding-top: 38px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.lead {
+  font-size: 2rem;
+}
+
+a {
+  color: inherit;
+}
+
+.limit {
+  max-width: 400px;
+}
