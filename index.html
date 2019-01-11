@@ -15,11 +15,10 @@
   <title>Hignett's Rocking Horses</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarSupportedContent">
 
   <!-- NAVBAR -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Hignett's Rocking Horses</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,7 +43,6 @@
       </div>
     </div>
   </nav>
-
 
   <!-- Jumbotron  -->
   <div class="container">
@@ -71,19 +69,18 @@
           high-quality pieces.
           His proudest moment came when he was asked to build a play carriage for Queen Victoria's children.
           His passion for carpentry has been shared through
-          four generations of the family and is still alive today.</p>
+          four generations of the family and is still alive today...</p>
       </div>
       <hr class="mt-5">
     </div>
   </section>
-
 
   <!-- STORY  -->
   <section id="richard">
     <div class="container text-center">
       <h2 class="fix font-weight-bold pb-4"><u>Richard Hignett and Sons</u></h2>
       <div class="row pb-3">
-        <div class="col-md-7 d-flex align-items-center">
+        <div class="col-lg-7 d-flex align-items-center">
           <p class="paragraph">Founded in 1906, Richard Hignett and Sons. became a respected rocking horse maker in
             Merseyside.
             Richard (second-generation) made a number of rocking horses for children to ride on while at sea with the
@@ -100,9 +97,9 @@
 
           </p>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 d-flex align-items-center justify-content-center">
           <figure class="figure">
-            <img src="../img/richard.jpg" class="figure-img img-fluid rounded" alt="James Hignett (third-generation) stands with his wife and children enjoying one of his rocking horses.">
+            <img src="../img/james.jpg" class="figure-img img-fluid rounded img-height" alt="James Hignett (third-generation) stands with his wife and children enjoying one of his rocking horses.">
             <figcaption class="figure-caption">James Hignett (third-generation) and family enjoy his creation.</figcaption>
           </figure>
         </div>
@@ -115,7 +112,7 @@
     <div class="container text-center">
       <h2 class="fix font-weight-bold pb-4"><u>James Hignett</u></h2>
       <div class="row pb-3">
-        <div class="col-md-7 d-flex align-items-center">
+        <div class="col-lg-7 d-flex align-items-center">
           <p class="paragraph">Around a century after his great-grandfather retired James Hignett
             (fourth-generation) built his first
             rocking horse aged 11. Learning from his father (James) he became skilled at producing great pieces. After
@@ -126,18 +123,17 @@
             take up to a month to craft. One of his favourite horses was on display at a U.S. Air Force base in
             Ipswich for a period. Unfortunately for the rocking horse world, James has since switched careers.
           </p>
-
-
         </div>
-        <div class="col-md-5">
-          <img src="../img/test4.jpg" class="img-fluid rounded limit" alt="">
+        <div class="col-lg-5 d-flex align-items-center justify-content-center">
+          <figure class="figure">
+            <img src="../img/james2.jpg" class="figure-img img-fluid rounded img-height img-control" alt="James Hignett (fourth-generation) paints one of his rocking horses in 1984.">
+            <figcaption class="figure-caption">James Hignett (fourth-generation) painting a horse in 1984.</figcaption>
+          </figure>
         </div>
       </div>
       <hr class="mt-5">
     </div>
   </section>
-
-
 
   <!-- THE FUTURE -->
   <section id="future">
@@ -155,7 +151,6 @@
   </section>
 
   <!-- FOOTER -->
-
   <footer id="main-footer" class="text-center">
     <div class="container py-4">
       <hr>
@@ -165,22 +160,25 @@
     </div>
   </footer>
 
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="js/smooth-scroll.js"></script>
 
   <script>
+    //Scrollspy
+    $("body").scrollspy({ target: "#navbarSupportedContent", offset: 110 })
 
+    //Close collpased navbar when on click
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
 
-
+    //Smooth Scroll
+    var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 </body>
 
